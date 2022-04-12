@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario HTML5</title>
+</head>
+<body>
+    <section class="formulario">
+        <h1>Cadastro de DEVs</h1>
+        <h2>Complete suas informaçoes</h2>
+        <div class="form-box">
+            <form action="#" method="post">
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="nome">
+                            <span>Nome</span>
+                            <div class="input-icons">
+                                <i class="material-icons">person</i>
+                                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                            </div>
+                        </label>
+                    </td>
+                    <td>
+                        <label for="sobrenome">
+                            <span>Sobrenome</span>
+                            <div class="input-icons">
+                                <i class="material-icons">person</i>
+                                <input type="text" name="Sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                            </div>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            <label for="email">
+                <span>Email</span>
+                <div class="input-icons">
+                    <i class="material-icons">mail</i>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+            </label>
+            <div class="aplications">
+                <span>De qual lado da aplicação você desenvolve?</span>
+                <label for="front">
+                    <input type="radio" id="front" name="aplication" value="front-end" checked>
+                    front-end
+                </label>
+                <label for="back">
+                    <input type="radio" id="back" name="aplication" value="Back-end">
+                    Back-end
+                </label>
+                <label for="full">
+                    <input type="radio" id="full" name="aplication" value="Fullstack">
+                    Fullstack
+                </label>
+            </div>
+
+            <label for="senioridade">
+                <span>Senioridade</span>
+                <select id="senioridade" name="nivel">
+                    <option selected value="júnior">Júnior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="sênior">Sênior</option>
+                </select>
+            </label>
+
+            <div class="tech">
+                <span>Selecione as tecnologias que utiliza:</span>
+                <label for="html">
+                    <input type="checkbox" name="html" id="html">
+                    HTML
+                </label>
+                <label for="css">
+                    <input type="checkbox" name="css" id="css">
+                    CSS
+                </label>
+                <label for="javascript">
+                    <input type="checkbox" name="javascript" id="javascript">
+                    JavaScript
+                </label>
+                <label for="php">
+                    <input type="checkbox" name="php" id="php">
+                    PHP
+                </label>
+                <label for="csharp">
+                    <input type="checkbox" name="csharp" id="csharp">
+                    C#
+                </label>
+                <label for="python">
+                    <input type="checkbox" name="python" id="python">
+                    Python
+                </label>
+                <label for="java">
+                    <input type="checkbox" name="java" id="java">
+                    Java
+                </label>
+            </div>
+
+            <label for="experience">
+                <span>Conte um pouco mais da sua experiencia:</span>
+                <textarea name="experience" id="experience" cols="40" rows="10"></textarea>
+            </label>
+            <input type="submit" class="form-buttom" value="Concluido">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

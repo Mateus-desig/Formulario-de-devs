@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f0ece9;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+.formulario h1, .formulario h2 {
+  text-align: center;
+}
+
+.formulario h2 {
+  font-size: 10pt;
+}
+
+.formulario .form-box {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 50%;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px #0f0f0f;
+          box-shadow: 0px 0px 5px 0px #0f0f0f;
+}
+
+.formulario .form-box form table {
+  width: 99%;
+}
+
+.formulario .form-box form #nome, .formulario .form-box form #sobrenome {
+  width: 99%;
+  height: 40px;
+  padding-left: 5px;
+  border: none;
+}
+
+.formulario .form-box form #email {
+  width: 98%;
+  height: 40px;
+  padding-left: 5px;
+  border: none;
+}
+
+.formulario .form-box form span {
+  display: block;
+  font-size: 13pt;
+  margin: 10px 0px 2px 0px;
+}
+
+.formulario .form-box form .input-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #a7a6a6;
+}
+
+.formulario .form-box form .input-icons i {
+  padding: 8px;
+  background-color: #ffffff;
+  color: #0f0f0f;
+  border-right: 1px solid #e2dede;
+}
+
+.formulario .form-box form .aplications input {
+  margin-top: 7px;
+}
+
+.formulario .form-box form #senioridade {
+  width: 160px;
+  padding: 5px;
+  background-color: #fafafa;
+  border: 1px solid #0f0f0f;
+  cursor: pointer;
+}
+
+.formulario .form-box form .tech input {
+  margin-top: 7px;
+}
+
+.formulario .form-box form textarea {
+  width: 99%;
+}
+
+.formulario .form-box form .form-buttom {
+  display: block;
+  width: 100px;
+  background-color: #2d2de9;
+  color: #fafafa;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 10px;
+  padding: 7px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.formulario .form-box form .form-buttom:hover {
+  background-color: #5757cc;
+}
+
+.formulario .form-box form .form-buttom:not(:hover) {
+  background-color: #2d2de9;
+}
+
+@media (max-width: 500px) {
+  .formulario .form-box {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

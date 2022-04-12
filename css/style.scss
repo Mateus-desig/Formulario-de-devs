@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+$colorText: #0f0f0f;
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(240, 236, 233);
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: $colorText;
+    text-decoration: none;
+}
+.formulario{
+    h1,h2{
+        text-align: center;
+    }
+    h2{
+        font-size: 10pt;
+    }
+    .form-box{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 50%;
+        padding: 5px;
+        box-shadow: 0px 0px 5px 0px #0f0f0f;
+
+        form{
+            table{
+                width: 99%;
+            }
+            #nome,#sobrenome{
+                width: 99%;
+                height: 40px;
+                padding-left: 5px;
+                border: none;
+            }
+            #email{
+                width: 98%;
+                height: 40px;
+                padding-left: 5px;
+                border: none;
+            }
+            span{
+                display: block;
+                font-size: 13pt;
+                margin: 10px 0px 2px 0px;
+            }
+            .input-icons{
+                display: flex;
+                border: 1px solid #a7a6a6;
+
+                i{
+                    padding: 8px;
+                    background-color: #ffffff;
+                    color: #0f0f0f;
+                    border-right: 1px solid #e2dede;
+                }
+            }
+            .aplications{
+                input{
+                    margin-top: 7px;
+                }
+            }
+            #senioridade{
+                width: 160px;
+                padding: 5px;
+                background-color: #fafafa;
+                border: 1px solid $colorText;
+                cursor: pointer;
+            }
+            .tech{
+                input{
+                    margin-top: 7px;
+                }
+            }
+            textarea{
+                width: 99%;
+            }
+            .form-buttom{
+                display: block;
+                width: 100px;
+                background-color: rgb(45, 45, 233);
+                color: #fafafa;
+                border-radius: 5px;
+                transition: all 0.5s;
+                margin-top: 10px;
+                padding: 7px;
+                width: 150px;
+                cursor: pointer;
+            }
+            .form-buttom:hover{
+                background-color: rgb(87, 87, 204);
+            }
+            .form-buttom:not(:hover){
+                background-color: rgb(45, 45, 233);
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    .formulario{
+        .form-box{
+            width: 95%;
+        }
+    }
+}
